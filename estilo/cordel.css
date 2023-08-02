@@ -53,32 +53,38 @@ section{
     font-family: var(--font3);
     font-size: 3.5vw;
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 
-section.arte1{
+section.imagem{
     background-color: dimgray;
     color: white;
     padding: 5px;
-    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+    background-attachment: fixed;
 }
-section.arte2{
-    background-color: dimgray;
-    color: white;
-    padding: 5px;   
-    background-image: url('imagens/background002.jpg');
+    
+section#arte01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+section#arte02{
+    background-image: url('../imagens/background002.jpg');
+    
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.518);
+    text-shadow: 1px 1px 0px black;
 }
 
-section.arte1 > p{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.229);
-}
-section.arte2 > p{
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.229);
-}
 
 footer{
     background-color: black;
